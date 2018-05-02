@@ -1,5 +1,5 @@
 import cv2
-# import zbar
+import zbar
 # import numpy as np
 
 # class DetectQRcode():
@@ -8,7 +8,7 @@ import cv2
 #         scanner = zbar.ImageScanner()
 #
 #         scanner.parse_config('enable')
-# 
+#
 #         gray = cv2.cvtColor(Image, cv2.COLOR_BGR2GRAY, dstCn=0)
 #         pil = image.fromarray(gray)
 #         width , high = pil.size
