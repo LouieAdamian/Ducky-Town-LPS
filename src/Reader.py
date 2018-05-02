@@ -1,5 +1,6 @@
 import cv2
 import zbar
+import numpy as np
 
 class DetectQRcode():
 
@@ -20,6 +21,6 @@ class DetectQRcode():
             x = (loc[0][0]+loc[2][0])/2
             y = (loc[0][1]+loc[2][1])/2
             if symbol.data == "None":
-                return "Drone bevindt zich buiten het raster"
+                pass
             else:
                 return symbol.data
