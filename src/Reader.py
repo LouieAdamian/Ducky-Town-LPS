@@ -1,6 +1,7 @@
 import cv2
 import zbar
 # import numpy as np
+class Reader():
 
 # class DetectQRcode():
 #
@@ -24,3 +25,16 @@ import zbar
 #                 pass
 #             else:
 #                 return symbol.data
+    def capture(self,):
+        exec("fswebcam capture -r 1920x1080")
+
+
+    def qrRead(self, image):
+        pass
+
+    def getPosition(self, code):
+
+    def mapPositon(self, coord):
+        prevSZ =[1920, 1080]
+        newSZ = [3,2]
+        return [(float(coord[0]) - 0) * (newSZ[1] - 0) / (prevsz[0] - 0) + 0, (float(coord[1]) - 0) * (newSZ[1] - 0) / (prevsz[1] - 0) + 0,]
